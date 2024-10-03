@@ -38,24 +38,7 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "Мы удалили пользователя: $text !", Toast.LENGTH_LONG).show()
         }
 
-        button.setOnClickListener {
-            val newText = userData.text.toString().trim()//trim() позволяет убрать лишние пробелы введённые пользователем
-            val existingItems = adapter.count //возвращает количество объектов, которыми управляет адаптер
-            for (i in 0 until existingItems) {
-                if (adapter.getItem(i).toString() == newText) {
-                    Toast.makeText(this, "Пользователь с данным именем уже существует!", Toast.LENGTH_SHORT).show()
-                    return@setOnClickListener
-                }
-            }
-            adapter.insert(newText, 0)
-            /*
-            val text = userData.text.toString().trim() //trim() позволяет убрать лишние пробелы введённые пользователем
-                if(text == "toast")
-                    Toast.makeText(this, "User enter toast", Toast.LENGTH_SHORT).show()
-                else
-                    textHello.text = text
-             */
-        }
+
 
     }
 
