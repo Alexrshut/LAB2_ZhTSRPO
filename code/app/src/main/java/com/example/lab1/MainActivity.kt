@@ -23,23 +23,30 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        val listView = findViewById<ListView>(R.id.listView)
-        //val label = findViewById<TextView>(R.id.text_hello)
-        val userData: EditText = findViewById(R.id.user_name)
-        val button: Button = findViewById(R.id.button)
+        val userLogin: EditText = findViewById(R.id.user_login)
+        val userEmail: EditText = findViewById(R.id.user_email)
+        val userPass: EditText = findViewById(R.id.user_password)
+        val button: Button = findViewById(R.id.button_reg)
 
-        val todos: MutableList<String> = mutableListOf(); //создание пустого массива дл я хранения значений листа
-        val adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, todos) //используем встроеный стиль android, при желании можно создать отдельный файл дизайна
-        listView.adapter = adapter //указали используемый адаптер для нашего листа
+        button.setOnClickListener{
+            val login = userLogin.text.toString().trim()
+            val email = userEmail.text.toString().trim()
+            val pass = userPass.text.toString().trim()
 
-        listView.setOnItemClickListener { adapterView, view, i, l ->
-            val text = listView.getItemAtPosition(i).toString()
-            adapter.remove(text)
-            Toast.makeText(this, "Мы удалили пользователя: $text !", Toast.LENGTH_LONG).show()
+            if(login == "" || email == "" || pass == "")
+                Toast.makeText(this, "Не все поля заполнены", Toast.LENGTH_LONG).show()
+            else {
+                val user = User(login, email, pass)
+
+                val db = DbHelper(this, null)
+                db.addUser(user)
+                Toast.makeText(this, "Пользователь $login добавлен", Toast.LENGTH_LONG).show()
+
+                userLogin.text.clear()
+                userEmail.text.clear()
+                userPass.text.clear()
+            }
+
         }
-
-
-
     }
-
 }

@@ -6,51 +6,66 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/design_default_color_on_secondary"
+    android:background="#201E28"
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/welcome_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/inter_bold"
+        android:textColor="#fdfdfd"
         android:layout_gravity="center"
         android:layout_marginTop="170dp"
-        android:textColor="#fdfdfd"
         android:textSize="25sp"
         android:textStyle="bold"
-        android:text="Создайте аккаунт"/>
+        android:text="Вход в личный кабинет" />
 
-
-    <TextView
+    <EditText
         android:id="@+id/user_login"
-        android:layout_width="220dp"
-        android:layout_height="50dp"
-        android:fontFamily="@font/inter_bold"
-        android:layout_marginTop="20dp"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
         android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:ems="10"
         android:inputType="text"
-        android:hint="Введите логин:"
         android:textColorHint="#6a6a6a"
-        android:textColor="#fdfdfd" />
+        android:textColor="#fdfdfd"
+        android:hint="Введите логин:" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="220dp"
-        android:layout_height="50dp"
-        android:fontFamily="@font/inter_bold"
-        android:text="TextView" />
+    <EditText
+        android:id="@+id/user_email"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#6a6a6a"
+        android:textColor="#fdfdfd"
+        android:hint="Введите email:" />
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/inter_bold"
-        android:text="TextView" />
+    <EditText
+        android:id="@+id/user_password"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColorHint="#6a6a6a"
+        android:textColor="#fdfdfd"
+        android:hint="Введите пароль:" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Button" />
+        android:id="@+id/button_reg"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#5e4602"
+        android:backgroundTint="#e2a600"
+        android:text="Вход" />
 </LinearLayout>
