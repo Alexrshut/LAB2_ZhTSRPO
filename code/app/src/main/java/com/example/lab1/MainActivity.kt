@@ -1,10 +1,9 @@
 package com.example.lab1
 
+import android.content.Intent
 import android.os.Bundle
-import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.EditText
-import android.widget.ListView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -27,6 +26,13 @@ class MainActivity : AppCompatActivity() {
         val userEmail: EditText = findViewById(R.id.user_email)
         val userPass: EditText = findViewById(R.id.user_password)
         val button: Button = findViewById(R.id.button_reg)
+        val linkToAuth: TextView = findViewById(R.id.link_to_auth)
+
+        linkToAuth.setOnClickListener{
+            val intent = Intent(this, AuthActivity::class.java) //Здесь ты создаешь объект Intent, который указывает, что ты хочешь перейти от текущей активности к AuthActivity.
+            startActivity(intent) //Этот метод запускает MainActivity, используя созданный Intent.
+            //Таким образом, при нажатии на link_to_reg, приложение переходит на AuthActivity.
+        }
 
         button.setOnClickListener{
             val login = userLogin.text.toString().trim()
@@ -34,17 +40,21 @@ class MainActivity : AppCompatActivity() {
             val pass = userPass.text.toString().trim()
 
             if(login == "" || email == "" || pass == "")
-                Toast.makeText(this, "Не все поля заполнены", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Не все поля заполнены!", Toast.LENGTH_LONG).show()
             else {
                 val user = User(login, email, pass)
-
                 val db = DbHelper(this, null)
-                db.addUser(user)
-                Toast.makeText(this, "Пользователь $login добавлен", Toast.LENGTH_LONG).show()
-
-                userLogin.text.clear()
-                userEmail.text.clear()
-                userPass.text.clear()
+                val isAuth = db.isExistsUser(login, pass)
+                if(isAuth){
+                    Toast.makeText(this, "Пользователь с логином $login уже существует!", Toast.LENGTH_LONG).show()
+                }
+                else {
+                    db.addUser(user)
+                    Toast.makeText(this, "Пользователь $login успешно добавлен!", Toast.LENGTH_LONG).show()
+                    userLogin.text.clear()
+                    userEmail.text.clear()
+                    userPass.text.clear()
+                }
             }
 
         }
