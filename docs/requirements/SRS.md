@@ -63,35 +63,35 @@ __Приложение будет содержать следующие осно
   
 • __Окно выбора точки вылета__.
   
-  ![Окно выбора точки прилёта](https://github.com/Alexrshut/LAB2_ZhTSRPO/blob/main/mocaps/flying_of_out_screen.png)
+  ![Окно выбора точки прилёта](https://github.com/Alexrshut/LAB2_ZhTSRPO/blob/main/docs/mocaps/flying_of_out_screen.png)
 
 • __Окно выбора точки прилёта__.
 
-  ![Окно выбора точки прилёта](https://github.com/Alexrshut/LAB2_ZhTSRPO/blob/main/mocaps/place_of_arrival_screen.png)
+  ![Окно выбора точки прилёта](https://github.com/Alexrshut/LAB2_ZhTSRPO/blob/main/docs/mocaps/place_of_arrival_screen.png)
 
 • __Окно выбора даты туда__.
   
-  ![Окно выбора даты туда](https://github.com/Alexrshut/LAB2_ZhTSRPO/blob/main/mocaps/data_screen_there.png)
+  ![Окно выбора даты туда](https://github.com/Alexrshut/LAB2_ZhTSRPO/blob/main/docs/mocaps/data_screen_there.png)
 
 • __Окно выбора даты обратно _(если требуется)___.
   
-  ![Окно выбора даты обратно](https://github.com/Alexrshut/LAB2_ZhTSRPO/blob/main/mocaps/data_screen_back.png)
+  ![Окно выбора даты обратно](https://github.com/Alexrshut/LAB2_ZhTSRPO/blob/main/docs/mocaps/data_screen_back.png)
 
 • __Окно выбора количества мест и класса__.
   
-  ![Окно выбора количества мест и класса](https://github.com/Alexrshut/LAB2_ZhTSRPO/blob/main/mocaps/quantity_and_baggage_screen.png)
+  ![Окно выбора количества мест и класса](https://github.com/Alexrshut/LAB2_ZhTSRPO/blob/main/docs/mocaps/quantity_and_baggage_screen.png)
 
 • __Окно с результатом поиска__.
 
-  ![Информация о рейсе](https://github.com/Alexrshut/LAB2_ZhTSRPO/blob/main/mocaps/search_results_screen.png)
+  ![Информация о рейсе](https://github.com/Alexrshut/LAB2_ZhTSRPO/blob/main/docs/mocaps/search_results_screen.png)
 
 • __Окно с информацией о выбранной рейсе__.
 
-  ![Информация о рейсе](https://github.com/Alexrshut/LAB2_ZhTSRPO/blob/main/mocaps/about_the_flight_screen.png)
+  ![Информация о рейсе](https://github.com/Alexrshut/LAB2_ZhTSRPO/blob/main/docs/mocaps/about_the_flight_screen.png)
 
 • __Вход в личный кабинет__.
 
-  ![Вход в личный кабинет](https://github.com/Alexrshut/LAB2_ZhTSRPO/blob/main/mocaps/buy_tickets_screen.png)
+  ![Вход в личный кабинет](https://github.com/Alexrshut/LAB2_ZhTSRPO/blob/main/docs/mocaps/buy_tickets_screen.png)
 
 
 __Пример взаимодействия:__
