@@ -59,7 +59,7 @@ __Приложение будет содержать следующие осно
 
 • __Стартовое окно при входе в приложение__.
   
-  ![Стартовое окно при входе в приложение](https://github.com/Alexrshut/LAB2_ZhTSRPO/blob/main/mocaps/main_screen.png)
+  ![Стартовое окно при входе в приложение](https://github.com/Alexrshut/LAB2_ZhTSRPO/blob/main/docs/mocaps/main_screen.png)
   
 • __Окно выбора точки вылета__.
   
