@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:orientation="vertical"
+    android:background="@drawable/flight3"
+    android:paddingBottom="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/price_tc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_bold"
+            android:textColor="@color/black"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="160"/>
+
+        <TextView
+            android:id="@+id/null1_tc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_bold"
+            android:textColor="@color/black"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="BYN"/>
+
+        <TextView
+            android:id="@+id/date_tc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/inter_bold"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="16-10-2024"/>
+
+        <TextView
+            android:id="@+id/company_tc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/inter_bold"
+            android:gravity="end"
+            android:textColor="@color/black"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="MSQ"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/time1_tc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/inter_bold"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="10dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/null2_tc"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/inter_bold"
+            android:textColor="@color/black"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="10dp"
+            android:gravity="center"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:text="—"/>
+
+        <TextView
+            android:id="@+id/time2_tc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/inter_bold"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="10dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/null3_tc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_gravity="end"
+            android:fontFamily="@font/inter_bold"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="10dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:text="Пересадка"/>
+
+        <TextView
+            android:id="@+id/null4_tc"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_gravity="end"
+            android:fontFamily="@font/inter_bold"
+            android:gravity="center"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="10dp"
+            android:text="Время в пути"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/code1_tc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/inter_bold"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="10dp"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/null5_tc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/inter_bold"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="10dp"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/code2_tc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/inter_bold"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="10dp"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/per_tc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:fontFamily="@font/inter_bold"
+            android:gravity="center"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="10dp"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/time_tc"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_weight="2"
+            android:fontFamily="@font/inter_bold"
+            android:gravity="center"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="10dp"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</LinearLayout>
