@@ -1,4 +1,4 @@
-# :chart_with_downwards_trend: __Диаграммы последовательностей__
+# :chart_with_upwards_trend: __Диаграммы последовательностей__
 
 ___
 
