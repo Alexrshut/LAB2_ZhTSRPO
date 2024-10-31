@@ -1,4 +1,4 @@
-# :chart_with_upwards_trend: __Диаграмма классов__  
+# :pushpin: __Диаграмма классов__  
 
 <img src="https://github.com/Alexrshut/LAB2_ZhTSRPO/blob/main/docs/diagrams/Class/ClassDiagram.png" width="800"/>
 
