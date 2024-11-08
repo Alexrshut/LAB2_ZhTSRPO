@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "LAB1"
+rootProject.name = "AlexFly"
 include(":app")
  

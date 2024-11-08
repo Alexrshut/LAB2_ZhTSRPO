@@ -6,240 +6,142 @@
     android:layout_height="match_parent"
     android:background="#085394"
     android:orientation="vertical"
-    tools:context=".ticket.TicketInfoActivity">
+    tools:context=".ticket.TicketInfoActivity"
+    android:padding="16dp">
 
     <TextView
-        android:id="@+id/city1city2_tc_info"
+        android:id="@+id/ticket_route_info"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/inter_bold"
         android:gravity="center"
-        android:paddingHorizontal="20dp"
-        android:paddingVertical="20dp"
-        android:text="TextView"
+        android:padding="16dp"
+        android:text="Минск — Санкт-Петербург"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/ticket_flight_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_bold"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Номер рейса: 123"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/ticket_airline_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_bold"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="АЭРОФЛОТ"
         android:textColor="@color/white"
         android:textSize="22sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingHorizontal="10dp"
+        android:orientation="vertical"
         android:paddingVertical="10dp">
 
         <TextView
-            android:id="@+id/price_tc_info"
-            android:layout_width="0dp"
+            android:id="@+id/ticket_departure_city"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:fontFamily="@font/inter_bold"
-            android:text="TextView"
+            android:fontFamily="sans-serif"
+            android:padding="8dp"
+            android:text="Город вылета: Минск (MSQ)"
             android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:textSize="18sp" />
 
         <TextView
-            android:id="@+id/textView9"
-            android:layout_width="0dp"
+            android:id="@+id/ticket_arrival_city"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:fontFamily="@font/inter_bold"
-            android:text=" BYN"
+            android:fontFamily="sans-serif"
+            android:padding="8dp"
+            android:text="Город прилёта: Санкт-Петербург (LED)"
             android:textColor="@color/white"
-            android:textSize="20sp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingHorizontal="10dp"
-        android:paddingVertical="10dp">
+            android:textSize="18sp" />
 
         <TextView
-            android:id="@+id/time_tc_info"
-            android:layout_width="0dp"
+            android:id="@+id/ticket_departure_date"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:fontFamily="@font/inter_bold"
-            android:text="TextView"
+            android:fontFamily="sans-serif"
+            android:padding="8dp"
+            android:text="Дата вылета: 14.10.2024"
             android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:textSize="18sp" />
 
         <TextView
-            android:id="@+id/textView11"
-            android:layout_width="0dp"
+            android:id="@+id/ticket_arrival_date"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:fontFamily="@font/inter_bold"
-            android:text=" в пути"
+            android:fontFamily="sans-serif"
+            android:padding="8dp"
+            android:text="Дата прилёта: 14.10.2024"
             android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:textSize="18sp" />
 
+        <TextView
+            android:id="@+id/ticket_departure_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:padding="8dp"
+            android:text="Время вылета: 10:00"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/ticket_flight_duration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:padding="8dp"
+            android:text="Время в пути: 2 часа"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/ticket_transfer_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:padding="8dp"
+            android:text="Пересадка: Витебск в 22:45"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:visibility="visible" />
     </LinearLayout>
 
     <TextView
-        android:id="@+id/company_tc_info"
+        android:id="@+id/ticket_price"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/inter_bold"
         android:gravity="center"
-        android:paddingHorizontal="20dp"
-        android:paddingVertical="20dp"
-        android:text="БЕЛАВИА"
+        android:padding="16dp"
+        android:text="Цена: 160 BYN"
         android:textColor="@color/white"
-        android:textSize="22sp" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingHorizontal="10dp"
-        android:paddingVertical="10dp">
-
-        <TextView
-            android:id="@+id/time1_tc_info"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:fontFamily="@font/inter_bold"
-            android:text="TextView"
-            android:textColor="@color/white"
-            android:textSize="20sp" />
-
-        <TextView
-            android:id="@+id/city1_tc_info"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:fontFamily="@font/inter_bold"
-            android:text="TextView"
-            android:textColor="@color/white"
-            android:textSize="20sp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingHorizontal="10dp"
-        android:paddingVertical="10dp">
-
-        <TextView
-            android:id="@+id/data1_tc_info"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:fontFamily="@font/inter_bold"
-            android:text="TextView"
-            android:textColor="@color/white"
-            android:textSize="20sp" />
-
-        <TextView
-            android:id="@+id/city1code1_tc_info"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:fontFamily="@font/inter_bold"
-            android:text="TextView"
-            android:textColor="@color/white"
-            android:textSize="20sp" />
-    </LinearLayout>
-
-
-    <TextView
-        android:id="@+id/per_tc_info"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/inter_bold"
-        android:gravity="center"
-        android:paddingHorizontal="20dp"
-        android:paddingVertical="20dp"
-        android:text="Пересадка в городе Витебск в 22:45"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        android:textStyle="italic" />
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingHorizontal="10dp"
-        android:paddingVertical="10dp">
-
-        <TextView
-            android:id="@+id/time2_tc_info"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:fontFamily="@font/inter_bold"
-            android:text="TextView"
-            android:textColor="@color/white"
-            android:textSize="20sp" />
-
-        <TextView
-            android:id="@+id/city2_tc_info"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:fontFamily="@font/inter_bold"
-            android:text="TextView"
-            android:textColor="@color/white"
-            android:textSize="20sp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingHorizontal="10dp"
-        android:paddingVertical="10dp">
-
-        <TextView
-            android:id="@+id/data2_tc_info"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:fontFamily="@font/inter_bold"
-            android:text="TextView"
-            android:textColor="@color/white"
-            android:textSize="20sp" />
-
-        <TextView
-            android:id="@+id/city2code2_tc_info"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:fontFamily="@font/inter_bold"
-            android:text="TextView"
-            android:textColor="@color/white"
-            android:textSize="20sp" />
-    </LinearLayout>
+        android:textSize="24sp" />
 
     <Button
-        android:id="@+id/button1_tc_info"
-        android:layout_width="250dp"
-        android:layout_height="70dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
+        android:id="@+id/button_purchase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:backgroundTint="#FF9900"
-        android:text="Купить за 160 BYN"
+        android:text="Купить"
         android:textColor="@color/white"
         android:textSize="22sp"
         android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/button2_tc_info"
-        android:layout_width="250dp"
-        android:layout_height="70dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:backgroundTint="#FF9900"
-        android:text="Назад"
-        android:textColor="@color/white"
-        android:textSize="22sp"
-        android:textStyle="bold" />
+    <include layout="@layout/bottom_button" />
 
 </LinearLayout>
-
-

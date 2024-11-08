@@ -1,0 +1,62 @@
+[
+  {
+    "point": "Астана",
+    "name": "Нур-Султан",
+    "location": "Казахстан",
+    "code": "TSE"
+  },
+  {
+    "point": "Баку",
+    "name": "Баку",
+    "location": "Азербайджан",
+    "code": "GYD"
+  },
+  {
+    "point": "Ереван",
+    "name": "Ереван",
+    "location": "Армения",
+    "code": "EVN"
+  },
+  {
+    "point": "Минск",
+    "name": "Минск",
+    "location": "Беларусь",
+    "code": "MSQ"
+  },
+  {
+    "point": "Москва",
+    "name": "Москва",
+    "location": "Россия",
+    "code": "SVO"
+  },
+  {
+    "point": "Санкт-Петербург",
+    "name": "Санкт-Петербург",
+    "location": "Россия",
+    "code": "LED"
+  },
+  {
+    "point": "Екатеринбург",
+    "name": "Екатеринбург",
+    "location": "Россия",
+    "code": "SVX"
+  },
+  {
+    "point": "Тбилиси",
+    "name": "Тбилиси",
+    "location": "Грузия",
+    "code": "TBS"
+  },
+  {
+    "point": "Шанхай",
+    "name": "Шанхай",
+    "location": "Китай",
+    "code": "PVG"
+  },
+  {
+    "point": "Пекин",
+    "name": "Пекин",
+    "location": "Китай",
+    "code": "PEK"
+  }
+]

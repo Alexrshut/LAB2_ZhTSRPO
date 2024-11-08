@@ -5,31 +5,29 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="16dp"
     android:orientation="vertical"
     android:background="@drawable/flight5"
     tools:context=".city.CitysActivityFrome">
 
     <TextView
-        android:id="@+id/welcome_vb_city2"
+        android:id="@+id/welcome_vb_city1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_bold"
+        android:textColor="@color/text"
         android:layout_gravity="center"
         android:layout_margin="20dp"
-        android:fontFamily="@font/inter_bold"
-        android:textColor="@color/black"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        android:text="Откуда лететь"/>
+        android:textSize="24sp"
+        android:paddingHorizontal="16dp"
+        android:letterSpacing="0.05"
+        android:text="Откуда летим" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/list_vb_city2"
+        android:id="@+id/list_vb_city1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginVertical="20dp"/>
+        android:layout_height="470dp"
+        android:layout_marginVertical="20dp" />
 
     <include layout="@layout/bottom_button" />
-
 </LinearLayout>
-
-

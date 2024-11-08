@@ -5,36 +5,86 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#085394"
+    android:padding="16dp"
+    android:background="@color/background"
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/welcome_main"
+        android:text="Место вылета"
+        android:textSize="16sp"
+        android:textColor="@color/text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/inter_bold"
-        android:textColor="#fdfdfd"
-        android:layout_gravity="center"
-        android:layout_marginTop="170dp"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        android:text="Главное окно" />
+        android:layout_marginBottom="8dp" />
 
     <TextView
-        android:id="@+id/text1_main"
+        android:id="@+id/main_city1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:textColor="@color/hint"
+        android:textSize="20sp"
+        android:layout_marginBottom="8dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#FF0000"
+        android:minHeight="2dp" />
 
     <TextView
-        android:id="@+id/text2_main"
-        android:layout_width="match_parent"
+        android:text="Место прилёта"
+        android:textSize="16sp"
+        android:textColor="@color/text"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp" />
 
     <TextView
-        android:id="@+id/text3_main"
+        android:id="@+id/main_city2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:textColor="@color/hint"
+        android:textSize="20sp"
+        android:layout_marginBottom="8dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#FF0000"
+        android:minHeight="2dp" />
+
+    <TextView
+        android:text="Дата вылета"
+        android:textSize="16sp"
+        android:textColor="@color/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/main_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/hint"
+        android:textSize="20sp"
+        android:layout_marginBottom="8dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#FF0000"
+        android:minHeight="2dp" />
+
+    <Button
+        android:id="@+id/main_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Найти билеты"
+        android:textSize="20sp"
+        android:textColor="@color/text"
+        android:backgroundTint="@color/button"
+        android:layout_marginTop="40dp"
+        android:padding="16dp"/>
 </LinearLayout>

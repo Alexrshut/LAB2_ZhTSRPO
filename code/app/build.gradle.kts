@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.lab1"
+    namespace = "com.example.AlexFly"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.lab1"
+        applicationId = "com.example.AlexFly"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -51,7 +51,7 @@ android {
 }
 
 dependencies {
-
+    implementation("com.google.code.gson:gson:2.10.1") // добавление зависимости класса gson для удобства работы с форматов данных JSON
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -68,6 +68,7 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
     implementation(libs.play.services.maps)
+    implementation(libs.firebase.crashlytics.buildtools)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

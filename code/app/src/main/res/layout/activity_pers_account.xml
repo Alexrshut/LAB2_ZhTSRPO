@@ -6,117 +6,57 @@
     android:layout_height="match_parent"
     android:background="#085394"
     android:orientation="vertical"
+    android:padding="16dp"
     tools:context=".account.PersAccount">
 
     <TextView
-        android:id="@+id/welcome_text_reg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/inter_bold"
-        android:textColor="#fdfdfd"
+        android:textColor="@color/text"
         android:layout_marginTop="70dp"
         android:layout_gravity="center"
         android:textSize="25sp"
         android:textStyle="bold"
         android:text="Ваш личный кабинет" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/welcome_login"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:background="#FF9900"
-        android:orientation="horizontal">
+        android:fontFamily="@font/inter"
+        android:textColor="@color/text"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:text="Здравствуйте, [логин пользователя]" />
 
-        <TextView
-            android:id="@+id/login_ps"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:fontFamily="@font/inter_bold"
-            android:textColor="#fdfdfd"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:text="Ваш логин:"/>
-
-        <TextView
-            android:id="@+id/user_login_ps"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:fontFamily="@font/inter_bold"
-            android:textColor="#fdfdfd"
-            android:textSize="20sp"
-            android:textStyle="bold"/>
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#FF9900"
-        android:orientation="horizontal">
+        android:fontFamily="@font/inter"
+        android:textColor="@color/text"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:text="Купленные билеты " />
 
-
-        <TextView
-            android:id="@+id/email_ps"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:fontFamily="@font/inter_bold"
-            android:textColor="#fdfdfd"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:text="Ваш email:"/>
-
-        <TextView
-            android:id="@+id/user_email_ps"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:fontFamily="@font/inter_bold"
-            android:textColor="#fdfdfd"
-            android:textSize="20sp"
-            android:textStyle="bold"/>
-    </LinearLayout>
-
-    <LinearLayout
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_my_ticket"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#FF9900"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/pass_ps"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:fontFamily="@font/inter_bold"
-            android:textColor="#fdfdfd"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:text="Ваш пароль" />
-
-        <TextView
-            android:id="@+id/user_pass_ps"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:fontFamily="@font/inter_bold"
-            android:textColor="#fdfdfd"
-            android:textSize="20sp"
-            android:textStyle="bold"/>
-    </LinearLayout>
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp" />
 
     <Button
-        android:id="@+id/button_pc"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="300dp"
-        android:backgroundTint="#FF9900"
-        android:textColor="#fdfdfd"
+        android:id="@+id/button_exit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/button"
+        android:textColor="@color/text"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:text="Назад" />
+        android:text="Выйти" />
 
 </LinearLayout>
